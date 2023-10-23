@@ -14,11 +14,22 @@ echo __LINE__.'<br>';
     //rmdir('test2');
 
 // Read files and folders inside directory
-    file_get_contents('lorem')
+
+    $files = scandir('./');
+    echo '<pre>';
+    var_dump($files);
+    echo '</pre>';
+
+
+
 
 // file_get_contents, file_put_contents
+    // echo file_get_contents('lorem.txt');
+    // file_put_contents('sample.txt', 'some content');
 
 // file_get_contents from URL
+
+    // file_get_contents('url');
 
 // https://www.php.net/manual/en/book.filesystem.php
 // file_exists
